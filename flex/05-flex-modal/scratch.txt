@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box-a">Box A</div>
+        <div class="box-bc">
+            <div class="box-b">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur excepturi id soluta, numquam minima rerum doloremque
+                eveniet aspernatur beatae commodi. Cupiditate recusandae ad
+                repellendus quidem consectetur sequi amet aspernatur cumque!</div>
+            <div class="box-c">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur excepturi id soluta, numquam minima rerum doloremque
+                eveniet aspernatur beatae commodi. Cupiditate recusandae ad
+                repellendus quidem consectetur sequi amet aspernatur cumque!</div>
+        </div>
+    </div>
+    
+</body>
+
+</html> 
+
+
+
+-----
+
+
+
+
+
+body {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    background-color: lightyellow;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 480px;
+    background-color: pink;
+}
+
+.box-a {
+    color: royalblue;
+    font-size: 15px;
+    font-weight: 700;
+    background: lavender;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+.box-bc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.box-b {
+    background-color: lightgreen;
+}
+
+.box-c {
+    background-color: lightblue;
+}
+
